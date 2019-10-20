@@ -17,9 +17,10 @@ To run using option 1 or 2, follow the directions in the component README
 
 ### Running with docker-compose
 
-Open a terminal in the root directory of the repository you cloned from GitHub. From there, ensure you are in the directory that contains the docker-compose.yml file. Then execute the following command,
+Open a terminal in the root directory of the repository you cloned from GitHub. From there, execute the following commands,
 
 ```
+cd docker
 docker-compose up
 ```
 
