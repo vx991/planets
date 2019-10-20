@@ -1,0 +1,13 @@
+version: '3'
+services:
+  planet-service:
+    restart: always
+    image: 'vx991/planet-service:latest'
+    ports:
+      - '8080:8080'    
+  planet-ui:
+    depends_on:
+      - planet-service
+    image: 'vx991/planet-ui:latest'
+    ports:
+      - '8081:8081'

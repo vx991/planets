@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: planet-ui-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: planet-ui
+  template:
+    metadata:
+      labels:
+        component: planet-ui
+    spec:
+      containers:
+        - name: planet-ui
+          image: vx991/planet-ui
+          ports:
+            - containerPort: 8081

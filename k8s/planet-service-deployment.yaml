@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: planet-service-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: planet-service
+  template:
+    metadata:
+      labels:
+        component: planet-service
+    spec:
+      containers:
+        - name: planet-service
+          image: vx991/planet-service
+          ports:
+            - containerPort: 8080
