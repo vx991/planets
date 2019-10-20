@@ -44,3 +44,4 @@ kubectl apply -f k8s
 Once the node is runnings and pods have been deployed, you can view the report here,
 http://your-node-ip:30081/report 
 
+The data service is also exposed at port 30080 if you want to access the data API directly.
